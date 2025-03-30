@@ -1,0 +1,68 @@
+.carousel {
+  position: relative;
+  width: 80vw;
+  max-width: 100%;
+  height: 75vh;
+  background-color: #aaa;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: none;
+}
+
+.carousel-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.indicator-pill {
+  width: 40px;
+  height: 6px;
+  background-color: #ccc;
+  border-radius: 9999px;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.indicator-pill.active {
+  background-color: #000;
+}

@@ -1,0 +1,97 @@
+.custom-cursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+  transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease,
+    border 0.2s ease, border-radius 0.2s ease;
+  will-change: transform;
+}
+
+/* Default: small black circle */
+.custom-cursor.default {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.custom-cursor.work-default {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+/* Carousel variants: larger circle with invert effect */
+.custom-cursor.carousel-left,
+.custom-cursor.carousel-middle,
+.custom-cursor.carousel-right,
+.custom-cursor.project-item {
+  border-radius: 50%;
+  backdrop-filter: grayscale(1) invert(1) blur(4px);
+  -webkit-backdrop-filter: grayscale(1) invert(1) blur(4px);
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.custom-cursor.carousel-left,
+.custom-cursor.carousel-right {
+  width: 65px;
+  height: 65px;
+}
+.custom-cursor.carousel-middle {
+  width: 80px;
+  height: 80px;
+}
+
+.custom-cursor.project-item {
+  width: 50px;
+  height: 50px;
+  border-color: #222;
+}
+
+/* Link variant: slightly larger than default */
+.custom-cursor.link {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  backdrop-filter: invert(1);
+  -webkit-backdrop-filter: invert(1);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.custom-cursor .arrow {
+  font-size: 48px;
+  color: #fff;
+  font-family: Raleway;
+  transition: opacity 0.2s ease;
+}
+
+/* Adjust arrow positions for better centering */
+.custom-cursor.carousel-left .arrow,
+.custom-cursor.carousel-right .arrow {
+  transform: translateY(-3px);
+}
+
+.custom-cursor.carousel-middle .view-text,
+.custom-cursor.project-item .view-text {
+  font-family: Raleway;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: opacity 0.2s ease;
+  transition-delay: 0.2s;
+}
+
+.custom-cursor.carousel-middle .view-text {
+  color: #fff;
+  font-size: 14px;
+}
+
+.custom-cursor.project-item .view-text {
+  color: #222;
+  font-size: 12px;
+}

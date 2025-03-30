@@ -1,0 +1,103 @@
+.project-item {
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  border: 2px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Needed for absolute positioning of the overlay */
+}
+
+/* Generic image styling for all images */
+.project-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Main image: start zoomed in */
+.project-item img:not(.overlay-image) {
+  transform: scale(1.1);
+}
+
+/* On hover, only the main image zooms back out */
+.project-item:hover img:not(.overlay-image) {
+  transform: scale(1);
+  filter: brightness(0.6) blur(4px);
+}
+
+/* Overlay image styling */
+.project-item .overlay-image {
+  position: absolute;
+  width: 40%; /* 2/5 of the container’s width */
+  height: 40%; /* Keep square shape */
+  object-fit: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Start fully clipped on the right, so only the left edge shows */
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 0.5s ease;
+  z-index: 2; /* Display above the main image */
+}
+
+.project-item:hover .overlay-image {
+  /* Reveal the full image */
+  clip-path: inset(0 0 0 0);
+}
+
+/* Splash text styling */
+.project-item .splash-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: 3;
+  font-family: Raleway;
+  font-size: 1.25rem; /* Adjust as needed */
+  font-weight: 600;
+  color: white; /* Adjust to suit your design */
+  white-space: nowrap;
+}
+
+.project-item:hover .splash-text {
+  opacity: 1;
+}
+
+.project-item .splash-text.left {
+  /* Overlay image’s left edge is at 30% of the container,
+     so setting right to 70% positions the right edge of this text at 30% */
+  right: 70%;
+  text-align: right;
+  padding-right: 10px;
+}
+
+/* Position right splash text to the right of the overlay image */
+.project-item .splash-text.right {
+  /* Overlay image’s right edge is at 70% of the container */
+  left: 70%;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.project-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.project-item a img {
+  pointer-events: none;
+}
+
+.project-item.recent-style {
+  border-radius: 0px; /* No rounding */
+}
+
+.project-item.work-style {
+  border-radius: 8px; /* Adjust as needed */
+}

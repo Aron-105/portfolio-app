@@ -1,0 +1,59 @@
+.recent-projects {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.project-description {
+  flex: 0.8;
+}
+
+.project-description h2 {
+  font-size: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+.project-description p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.projects-content {
+  flex: 1.5;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.view-all {
+  text-align: right;
+  margin-top: 1.5rem;
+}
+
+.view-all-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  font-family: Raleway, sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.view-all-button:hover {
+  background-color: #333;
+}

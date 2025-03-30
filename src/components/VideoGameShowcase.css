@@ -1,0 +1,65 @@
+.video-game-showcase {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    min-height: 100vh; /* Ensures full page height */
+    box-sizing: border-box;
+  }
+  
+  .video-description {
+    flex: 0.8;
+    align-self: flex-start; /* Aligns text to the top of the container */
+    margin-top: 8rem; /* Adjust negative margin to move it up a bit */
+  }
+  
+  .video-description h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .video-description p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Updated to align the button to the right */
+  .view-devlog {
+    text-align: right;
+    margin-top: 1.5rem;
+  }
+  
+  .devlog-button {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .devlog-button:hover {
+    background-color: #333;
+  }
+  
+  .video-content {
+    flex: 1.5;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #000;
+    height: 75vh; /* Ensures the video takes significant vertical space */
+    position: relative;
+  }
+  
+  .showcase-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video fills container without distortion */
+  }
+  

@@ -1,0 +1,59 @@
+/* components/PillarsSection.css */
+.pillars-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.icons-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.pillar-icon {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f4f4f4;
+}
+
+.pillar-icon img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.plus-sign {
+  font-size: 32px;
+  font-weight: bold;
+  color: #000;
+}
+
+.text-container {
+  max-width: 500px;
+  text-align: left;
+}
+
+.text-container h2 {
+  font-size: 34px;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.text-container p {
+  font-family: Raleway;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+}

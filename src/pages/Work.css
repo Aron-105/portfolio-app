@@ -1,0 +1,47 @@
+/* Work.css */
+.Work {
+  background-color: white;
+  color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* Ensures vertical stacking */
+  align-items: center; /* Keeps horizontal centering of items */
+  margin: 0;
+}
+
+.hero {
+  text-align: center; /* ensures the text inside is centered */
+  height: 100vh;
+}
+
+.title {
+  display: flex;
+  align-items: center; /* Vertically center items */
+  margin-top: 35vh;
+  justify-content: center; /* Centers all items horizontally, but we will adjust */
+  gap: 2rem;
+}
+
+.hero h1 {
+  font-size: 144pt;
+}
+
+.side-text {
+  margin-top: 50px;
+}
+
+.side-text:first-of-type {
+  margin-right: auto; /* push the H1 to the right */
+}
+.side-text:last-of-type {
+  margin-left: auto; /* push the H1 to the left */
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 6rem;
+}

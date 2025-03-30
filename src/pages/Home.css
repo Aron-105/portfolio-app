@@ -1,0 +1,9 @@
+/* Home.css */
+.rest-of-site {
+  position: relative;
+  z-index: 2; /* Must be less than header’s z-index: 100 */
+  margin-top: 50vh;
+  background: white;
+  min-height: 100vh;
+  padding: 2rem;
+}

@@ -1,0 +1,51 @@
+/* The overall container for the front page
+   We give it a tall height (e.g., 200vh) so you can scroll enough
+   for the white section (rest-of-site) to slide up and cover it. */
+.front-page {
+  position: relative;
+  height: 100vh;
+}
+
+/* FrontPage.css */
+.pinned-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 1; /* below the header’s high z-index */
+  background-color: #d0d0d0;
+  box-sizing: border-box;
+  padding-top: 130px; /* pick a value that aligns visually with your header height */
+}
+
+
+/* Dark overlay on pinned-content, driven by the scroll-based CSS var. */
+.pinned-content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, var(--dark-overlay, 0));
+  pointer-events: none;
+  transition: background 0.1s linear;
+  z-index: 2;
+}
+
+/* The main splash area where the carousel sits */
+.splash {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: calc(100vh - 150px); /* Adjust as needed for layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* The carousel wrapper receives the transform from JS */
+.carousel-wrapper {
+  position: relative;
+  z-index: 3;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
