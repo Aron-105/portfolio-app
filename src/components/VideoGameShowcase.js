@@ -24,7 +24,7 @@ function VideoGameShowcase({ setCursorVariant }) {
       <div className="video-content">
         <video
           className="showcase-video"
-          src="/assets/video-game-showcase.mp4"
+          src={process.env.PUBLIC_URL + "/assets/video-game-showcase.mp4"}
           autoPlay
           loop
           muted

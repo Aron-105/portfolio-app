@@ -36,10 +36,10 @@ function ProjectThumbnail({ setCursorVariant, src, src2, link, splash, variant }
       onMouseLeave={() => setCursorVariant("default")}
     >
       <Link to={link}>
-        <img src={src} alt="Project Thumbnail" />
+        <img src={process.env.PUBLIC_URL + src} alt="Project Thumbnail" />
         {src2 && (
           <img
-            src={src2}
+            src={process.env.PUBLIC_URL + src2}
             alt="Project Thumbnail Overlay"
             className="overlay-image"
           />

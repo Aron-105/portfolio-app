@@ -39,7 +39,7 @@ function Header({ setCursorVariant }) {
         <Link to="/">
           <img
             className="logo-img"
-            src="/assets/branding/wordmark_white.png"
+            src={process.env.PUBLIC_URL + "/assets/branding/wordmark_white.png"}
             alt="Logo"
             style={{ transform: `scale(${logoScale})` }}
           />

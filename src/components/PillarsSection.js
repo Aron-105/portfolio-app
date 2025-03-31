@@ -11,7 +11,10 @@ function PillarsSection({ setCursorVariant }) {
           onMouseEnter={() => setCursorVariant("link")}
           onMouseLeave={() => setCursorVariant("default")}
         >
-          <img src="/assets/icons/marketing-icon.png" alt="Marketing Icon" />
+          <img
+            src={process.env.PUBLIC_URL + "/assets/icons/marketing-icon.png"}
+            alt="Marketing Icon"
+          />
         </div>
         <div className="plus-sign">+</div>
         <div
@@ -19,7 +22,10 @@ function PillarsSection({ setCursorVariant }) {
           onMouseEnter={() => setCursorVariant("link")}
           onMouseLeave={() => setCursorVariant("default")}
         >
-          <img src="/assets/icons/design-icon.png" alt="Design Icon" />
+          <img
+            src={process.env.PUBLIC_URL + "/assets/icons/design-icon.png"}
+            alt="Design Icon"
+          />
         </div>
         <div className="plus-sign">+</div>
         <div
@@ -27,7 +33,10 @@ function PillarsSection({ setCursorVariant }) {
           onMouseEnter={() => setCursorVariant("link")}
           onMouseLeave={() => setCursorVariant("default")}
         >
-          <img src="/assets/icons/tech-icon.png" alt="Tech Icon" />
+          <img
+            src={process.env.PUBLIC_URL + "/assets/icons/tech-icon.png"}
+            alt="Tech Icon"
+          />
         </div>
       </div>
 
@@ -43,8 +52,8 @@ function PillarsSection({ setCursorVariant }) {
           />
         </h2>
         <p>
-          I have experience and skills in Branding, Graphic Design, Frontend Web Development,
-          Java, Python, Motion Design, and Media Post-production.{" "}
+          I have experience and skills in Branding, Graphic Design, Frontend Web
+          Development, Java, Python, Motion Design, and Media Post-production.{" "}
         </p>
       </div>
     </div>

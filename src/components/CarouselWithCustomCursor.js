@@ -74,13 +74,13 @@ export default function CarouselWithCustomCursor({
       {prevSlide !== null && (
         <img
           className="carousel-image fade-out"
-          src={images[prevSlide]}
+          src={process.env.PUBLIC_URL + images[prevSlide]}
           alt={`Slide ${prevSlide + 1}`}
         />
       )}
       <img
         className={`carousel-image ${animating ? "fade-in" : ""}`}
-        src={images[currentSlide]}
+        src={process.env.PUBLIC_URL + images[currentSlide]}
         alt={`Slide ${currentSlide + 1}`}
       />
 

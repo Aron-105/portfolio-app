@@ -25,13 +25,7 @@ function Work({ setCursorVariant }) {
       src: "/assets/thumbnails/tavs-main.png",
       src2: "/assets/thumbnails/tavs-overlay.png",
       splash: "Sandia Labs",
-    },
-    {
-      link: "/projects/Yearbook",
-      src: "/assets/thumbnails/yearbook-temp.png",
-      src2: "/assets/thumbnails/yearbook-temp.png",
-      splash: "Senior Yearbook",
-    },
+    }
   ];
 
   return (
