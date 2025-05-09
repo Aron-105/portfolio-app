@@ -1,5 +1,7 @@
 import React from "react";
 import "./RecentProjects.css";
+
+import { Link } from "react-router-dom";
 import ProjectThumbnail from "./ProjectThumbnail";
 
 function RecentProjects({ setCursorVariant }) {
@@ -39,14 +41,14 @@ function RecentProjects({ setCursorVariant }) {
           You can find more details about each project by clicking on them, or by visiting the full work page.
         </p>
         <div className="view-all">
-          <a
-            href="/work"
+          <Link
+            to="/work"
             className="view-all-button"
             onMouseEnter={() => setCursorVariant("link")}
             onMouseLeave={() => setCursorVariant("default")}
           >
             View All Work
-          </a>
+          </Link>
         </div>
       </div>
       <div className="projects-content">

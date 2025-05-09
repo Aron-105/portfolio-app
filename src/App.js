@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
 import CustomCursor from "./cursor/CustomCursor";
+import ScrollToTop from "./hooks/ScrollToTop";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -23,6 +24,9 @@ function App() {
 
   return (
     <div className="App">
+
+      <ScrollToTop />
+
       <CustomCursor cursorVariant={cursorVariant} />
 
       <Routes>

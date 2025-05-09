@@ -1,7 +1,42 @@
 .Course-Projects {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 .content {
-    padding-top: 130px;
+  padding-top: 130px;
+}
+
+.project-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.responsiveContainer {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 45%;
+  box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+  margin: 1.6em 0 0.9em;
+  overflow: hidden;
+  border-radius: 8px;
+  will-change: transform;
+}
+
+.responsiveContainer iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+  padding: 0;
+  margin: 0;
 }

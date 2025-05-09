@@ -48,7 +48,7 @@ function _createMdxContent(props) {
         className: "text-content",
         children: _jsx("p", {
           children: _jsx(_components.p, {
-            children: "Hades is a critically acclaimed rogue-like dungeon crawler from Supergiant Games, known for blending compelling narratives with dynamic gameplay. Set in the rich tapestry of Greek mythology, it invites players into a vivid underworld teeming with depth and replayability."
+            children: "Hades is a roguelike dungeon crawler from Supergiant Games, and it's well known for blending a deep narrative with fast-paced gameplay. The roguelike genre isn't typically thought of as being defined by compelling storytelling, which is why Hades stands out so well. It's set within the vast world of Greek Mythology, it invites players into a vivid underworld teeming with both depth and replayability."
           })
         })
       })]
@@ -60,10 +60,20 @@ function _createMdxContent(props) {
         className: "text-content",
         children: [_jsx("h5", {
           children: "Character Depth"
-        }), _jsx("p", {
-          children: _jsx(_components.p, {
-            children: "Hades excels in character depth through intricate storytelling, distinct personalities, and rich dialogues. Characters evolve alongside gameplay, revealing nuanced traits and backstories that resonate emotionally with players. Zagreus's witty yet determined personality, coupled with familial dynamics portrayed authentically through sharp, believable dialogue, creates a strong emotional connection, significantly enhancing player immersion and investment."
-          })
+        }), _jsxs("p", {
+          children: [_jsx(_components.p, {
+            children: "Hades excels in character depth through its intricate storytelling, distinct personalities, and rich dialogues. Characters evolve alongside the player as he they progress, revealing nuanced traits and backstories."
+          }), _jsx("br", {}), _jsxs(_components.p, {
+            children: ["I recommend watching this video to gain a better understanding of how Hades' dialogue system achieves such a high bar:\r\n", _jsx("strong", {
+              children: _jsx("a", {
+                href: "https://www.youtube.com/watch?v=bwdYL0KFA_U",
+                target: "_blank",
+                children: " The System Behind Hades' Astounding Dialogue "
+              })
+            })]
+          }), _jsx("br", {}), _jsx(_components.p, {
+            children: "Zagreus's witty personality, coupled with an incredibly long script displaying authentic familial dynamics through believable dialogue, creates strong connections with main, side, and tertiary characters, enhancing the overall player immersion."
+          })]
         })]
       }), _jsxs("figure", {
         children: [_jsx("img", {
@@ -85,7 +95,7 @@ function _createMdxContent(props) {
           children: "Art Style"
         }), _jsx("p", {
           children: _jsx(_components.p, {
-            children: "Hades’s distinctive art style uses vibrant, hand-painted visuals with a strong emphasis on Greek mythology aesthetics. Bold colors, dramatic contrasts, and detailed character designs merge seamlessly, establishing a visually striking experience that complements the game's dynamic pace and narrative intensity."
+            children: "Hades’s art style uses vibrant visuals with a strong emphasis on Greek mythology aesthetics. As the game is played entirely in isometric perspective, many background elements and still objects are hand drawn, with characters and moving assets sculpted in 3D with a 2D shader over top."
           })
         })]
       }), _jsxs("figure", {
@@ -108,7 +118,7 @@ function _createMdxContent(props) {
           children: "Boss Design"
         }), _jsx("p", {
           children: _jsx(_components.p, {
-            children: "Bosses in Hades are meticulously crafted, offering unique challenges that evolve dynamically. Each encounter requires adaptive strategy and quick thinking, rewarding players for mastering mechanics while ensuring encounters remain fresh and engaging through randomized attack patterns and escalating difficulty."
+            children: "Bosses in Hades are meticulously crafted, offering unique challenges that evolve dynamically. Each encounter requires a new strategy as well as quick thinking and reactions. This design rewards players for mastering mechanics while ensuring encounters remain fresh and engaging due to the many possible weapon builds in the game."
           })
         })]
       }), _jsxs("figure", {
@@ -150,7 +160,7 @@ function _createMdxContent(props) {
           children: "Combat Fluidity and Depth"
         }), _jsx("p", {
           children: _jsx(_components.p, {
-            children: "Devil May Cry 5 sets a new benchmark for fluidity and combat depth in action games. The diverse combat system, featuring distinct playstyles for each character (Dante, Nero, and V), allows for intricate combo creations and expressive player freedom. Seamless transitions between attacks, coupled with a responsive control scheme, create an intuitive yet profoundly deep combat experience, highly rewarding player skill and creativity."
+            children: "Devil May Cry 5 set a new benchmark for fluidity and combat depth in action games. The diverse combat system, featuring distinct playstyles for each character, allows for intricate combos and player freedom. Seamless transitions between attacks create an intuitive yet profoundly deep combat experience, rewarding player skill and creativity."
           })
         })]
       }), _jsx("figure", {
@@ -272,7 +282,7 @@ function _createMdxContent(props) {
           children: "Multiple Worlds to Explore"
         }), _jsx("p", {
           children: _jsx(_components.p, {
-            children: "Super Mario Odyssey captivates players through its diverse worlds, each uniquely themed and packed with secrets, puzzles, and imaginative environments. The worlds are distinct yet cohesive, fostering continuous curiosity and exploration. Attention to environmental design detail ensures every space is engaging, rewarding exploration with tangible gameplay benefits like hidden collectibles and shortcuts."
+            children: "Super Mario Odyssey captivates players through its diverse worlds, each uniquely themed and packed with secrets, puzzles, and imaginative environments. The worlds are distinct yet cohesive, fostering continuous exploration. Attention to environmental design detail ensures every space is engaging, rewarding exploration with tangible gameplay benefits."
           })
         })]
       }), _jsxs("figure", {
